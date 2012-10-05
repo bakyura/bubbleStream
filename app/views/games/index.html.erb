@@ -1,0 +1,18 @@
+<div>
+  <% @data.each do |row_value| %>
+    <div class = "row">
+	  <% row_value.each do |cell_value| %>
+	    <div class = "cell <%= cell_value %>" onClick = "" ></div>
+	  <% end %>
+	</div>
+	<div class="clear" />
+  <% end %>
+</div>
+<div>
+  <div>
+    <button type="button">Reset</button>
+  </div>
+  <div>
+    <button type="button">Help</button>
+  </div>
+</div>

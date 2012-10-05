@@ -11,3 +11,35 @@
  *= require_self
  *= require_tree .
  */
+.cell {
+  float: left;
+  height: 30px;
+  width: 30px;
+  margin: 1px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.clear {
+  clear: left;
+}
