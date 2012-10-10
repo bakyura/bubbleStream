@@ -6,10 +6,10 @@ class GamesController < ApplicationController
     current_game = Game.find_by_session_id sid
     if current_game.nil?	
       reset
-	  #game = Game.new({:session_id => sid, :data => @data.to_json, :status_id => Status.first.id})
-	  #game.save
+	  game = Game.new({:session_id => sid, :data => @data.to_json, :status_id => Status.first.id})
+	  game.save
 	else
-	  @data = current_game.data
+	  @data = JSON.parse current_game.data
 	end
   end
   
