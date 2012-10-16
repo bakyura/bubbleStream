@@ -1,6 +1,9 @@
 BubbleStream::Application.routes.draw do
   root :to => "games#index"
   
+  match "update_table", :to => "games#touch"
+  match "reset_table", :to => "games#reset_table"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
